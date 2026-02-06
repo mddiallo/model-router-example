@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p01",
+    "category": "summarization",
+    "prompt": "Summarize the key benefits of cloud computing in three bullet points.",
+    "expected_keywords": ["scalability", "cost", "flexibility"]
+  },
+  {
+    "id": "p02",
+    "category": "reasoning",
+    "prompt": "Explain why the sky appears blue during the day using simple language.",
+    "expected_keywords": ["light", "scatter", "wavelength"]
+  },
+  {
+    "id": "p03",
+    "category": "coding",
+    "prompt": "Write a Python function that checks whether a string is a palindrome.",
+    "expected_keywords": ["def", "return", "reverse"]
+  },
+  {
+    "id": "p04",
+    "category": "creative",
+    "prompt": "Write a haiku about artificial intelligence.",
+    "expected_keywords": ["AI", "machine", "learn"]
+  },
+  {
+    "id": "p05",
+    "category": "factual",
+    "prompt": "What are the three laws of thermodynamics? Briefly explain each.",
+    "expected_keywords": ["energy", "entropy", "absolute zero"]
+  }
+]
