@@ -22,7 +22,7 @@ The example script demonstrates:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/mddiallo/model-router-example.git
+git clone https://github.com/<your-username>/model-router-example.git
 cd model-router-example
 ```
 

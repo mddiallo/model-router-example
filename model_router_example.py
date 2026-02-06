@@ -121,7 +121,7 @@ def run_model_router_example():
         sys.exit(1)
     
     print(f"\n✓ Endpoint configured: {endpoint}")
-    print(f"✓ API key configured: {'*' * 10}{api_key[-4:] if len(api_key) > 4 else '****'}")
+    print(f"✓ API key configured: {'*' * 10}****")
     
     # Initialize the client
     try:
