@@ -6,6 +6,8 @@ import json
 import tempfile
 from pathlib import Path
 
+import pytest
+
 from src.router_test import load_prompts, parse_args, write_csv, write_raw_json
 
 
@@ -26,20 +28,14 @@ class TestLoadPrompts:
     def test_invalid_not_array(self, tmp_path: Path):
         p = tmp_path / "bad.json"
         p.write_text('{"id": "p1"}')
-        try:
+        with pytest.raises(ValueError):
             load_prompts(str(p))
-            assert False, "Should have raised ValueError"
-        except ValueError:
-            pass
 
     def test_missing_keys(self, tmp_path: Path):
         p = tmp_path / "bad2.json"
         p.write_text('[{"id": "p1"}]')
-        try:
+        with pytest.raises(ValueError):
             load_prompts(str(p))
-            assert False, "Should have raised ValueError"
-        except ValueError:
-            pass
 
 
 # ---------------------------------------------------------------------------
